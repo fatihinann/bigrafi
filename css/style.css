@@ -13,6 +13,9 @@ header{
 .btn{
     text-decoration: none;
 }
+p{
+    line-height: 1.5;
+}
 .text-center{text-align: center;}
 .heading-1{font-size: 1.25rem;}
 .heading-2{font-size: 1.5rem;}
@@ -157,7 +160,6 @@ hr{
 
 .rd{
     background-color: #f08888;
-    height: 20vh;
 }
 
 .my-sec{
@@ -397,7 +399,6 @@ hr{
   }
 
 
-
   .details {
     position: absolute;
     bottom: 0;
@@ -451,10 +452,132 @@ hr{
 }
 .section4{
     background-color: #f7bbbb;
-    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 }
-
-
+.service-header{
+    font-weight: 900;
+    color: #fff;
+    padding: 0.5rem;
+    border: 2px solid #fff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.section4 .shape{
+    background-color: #f7bbbb;
+    bottom: 0;
+}
+  
+  .sec4 p{
+    font-size: larger;
+    margin: 1rem;
+    text-align: center;
+  }
+  :root{
+    --lightblue: #42b7ca;
+    --blue: #425fca;
+    --purple: #9c42ca;
+  }
+  .service a {
+    color: #5b7abb;
+    display: block;
+  }
+  
+  .service h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #56ceba;
+    font-size: 1.3rem;
+    margin: 1rem 0 0.6rem;
+  }
+  
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 5rem;
+  }
+  .service {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #e7e7e7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .service:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .service i {
+    font-size: 1.5rem;
+  }
+  
+  .service1 i,
+  .service1 h4,
+  .service1 .cta {
+    color: #42b7ca;
+  }
+  
+  .service1:hover {
+    border: 2px solid #42b7ca;
+  }
+  
+  .service2 i,
+  .service2 h4,
+  .service2 .cta {
+    color: #425fca;
+  }
+  
+  .service2:hover {
+    border: 2px solid #425fca;
+  }
+  
+  .service3 i,
+  .service3 h4,
+  .service3 .cta {
+    color: #9c42ca;
+  }
+  
+  .service3:hover {
+    border: 2px solid #9c42ca;
+  }
+  
+  .service .cta span {
+    font-size: 0.6rem;
+  }
+  
+  .service > * {
+    flex: 1 1 100%;
+  }
+  
+  .service .cta {
+    align-self: flex-end;
+  }
+  
+  @media all and (max-width:900px) {
+    .services-grid {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+    }
+  }
 /* footer */
 .form-group{
     padding: 0.25 0;
