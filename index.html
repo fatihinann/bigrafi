@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revize</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+</head>
+<body>
+    <header>
+            
+        <div class="sidebar">
+            <span class="toggle-btn fas fa-bars" onclick="openNav()"></span>
+            <span class="navbar-left">
+                <img class="profile-image" src="img/bigrafi.jpg" alt="bigrafi web tasarım">
+            </span>
+        </div>
+        
+        <div id="myNav" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul class="socials">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/bigrafi_/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <ul class="links">
+                    <li><a href="index.html">Anasayfa</a><ul class="shape"></ul></li>
+                    <li><a href="#about">Hakkımızda</a><ul class="shape"></ul></li>
+                    <li><a href="#blog.html">Blog</a><ul class="shape"></ul></li>   
+                    <li><a href="#portfolio">Portfolyo</a><ul class="shape"></ul></li>
+                    <li><a href="#contact">İletişim</a><ul class="shape"></ul></li>
+                </ul>
+              </div>
+            
+            </div>
+
+        
+        <nav id="navbar">
+            <span class="navbar-left">
+            </span>
+            <div class="navbar-inside">
+                <ul class="socials">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/bigrafi_/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <ul class="links">
+                    <li><a href="index.html">Anasayfa</a><ul class="shape"></ul></li>
+                    <li><a href="#about">Hakkımızda</a><ul class="shape"></ul></li>
+                    <li><a href="#blog.html">Blog</a><ul class="shape"></ul></li>   
+                    <li><a href="#portfolio">Portfolyo</a><ul class="shape"></ul></li>
+                    <li><a href="#contact">İletişim</a><ul class="shape"></ul></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <!-- Hoş Geldiniz -->
+    <div class="section section1">
+        <section class="my-sec">
+            <h2>Bigrafi'ye Hoş Geldin!</h2>
+            <span class="shape"></span>
+        </section>
+        <section class="my-sec st">
+            <div class="section-center">
+                <p class="service-text">Hizmetlerimizden yararlanmak için hizmetlerimize göz atabilirsiniz. </p>
+                <a href="services.html" class="services">Hizmetler</a>
+            </div>
+            <div class="middle-line"></div>
+            <div class="section-center">
+                <p class="service-text">Yaptığımız tasarımları incelemek için portfolyomuza göz atabilirsiniz. </p>
+                <a href="portfolio.html" class="services">Portfolyo</a>
+            </div>
+        </section>
+    </div>
+    <!-- Bigrafi Kimdir? -->
+    <div class="section section2" id="about">
+        <section class="my-sec">
+            <h2>Bigrafi Kimdir?</h2>
+            <span class="shape"></span>
+            <!-- <span class="shape-section"></span> -->
+        </section>
+        
+        <section class="my-sec nd">
+            <p>20li yaşlarda 5 arkadaşın girişimi olan. Kaliteli tasarımların yapıldığı Grafik, web sitesi tasarımlarını yapan bi grubun eseridir. Öz Tasarımlarınızı yaptırabileceğiniz sade ve kaliteli tasarımlar bulabileceğiniz bir isimdir.</p>
+            <!-- <img src="img/bigrafi_dark.png" alt=""> -->
+        </section>
+    </div>
+    <!-- Profiles -->
+    <div class="section section3">
+        <div class="container-f">
+            <div class="card-wrapper">
+              <div class="card profile">
+                <div class="card-image profile-img">
+                    <div class="stat"><h2 class="name">Fatih İnan<br><span class="job">Web Devoloper</span></h2></div>
+                  <img src="img/user.svg" alt="profile two">
+                </div>
+          
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                </ul>
+          
+                    <div class="details per">
+                        <h2>Fatih İnan<br><span class="job-title">Web Devoloper</span>
+                            <ul class="social-icons-per">
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-github"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                              </ul>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card profile">
+                    <div class="card-image profile-img">
+                        <div class="stat"><h2 class="name">Mehmet Yaman<br><span class="job">Designer</span></h2></div>
+                        <img src="img/user.svg" alt="profile two">
+                    </div>
+            
+                    <ul class="social-icons">
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                      <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+            
+                    <div class="details per">
+                        <h2>Mehmet Yaman<br><span class="job-title">Designer</span>
+                          <ul class="social-icons-per">
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-github"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                          </ul>
+                        </h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card profile">
+                  <div class="card-image profile-img">
+                      <div class="stat"><h2 class="name">Yasiner Albayrak<br><span class="job">Graphic Designer</span></h2></div>
+                    <img src="img/user.svg" alt="profile two">
+                  </div>
+            
+                  <ul class="social-icons">
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                      <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                  </ul>
+            
+                      <div class="details per">
+                          <h2>Yasiner Albayrak<br><span class="job-title">Graphic Designer</span>
+                              <ul class="social-icons-per">
+                                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                  <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                                </ul>
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="card profile">
+                  <div class="card-image profile-img">
+                      <div class="stat"><h2 class="name">Emre Kutucu<br><span class="job">Designer</span></h2></div>
+                    <img src="img/user.svg" alt="profile two">
+                  </div>
+            
+                  <ul class="social-icons">
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                      <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                  </ul>
+            
+                      <div class="details per">
+                          <h2>Emre Kutucu<br><span class="job-title">Designer</span>
+                            <ul class="social-icons-per">
+                                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                  <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                            </ul>
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-wrapper">
+                <div class="card profile">
+                  <div class="card-image profile-img">
+                      <div class="stat"><h2 class="name">Ecem<br><span class="job">... </span></h2></div>
+                    <img src="img/user.svg" alt="profile two">
+                  </div>
+            
+                  <ul class="social-icons">
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                      <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                  </ul>
+            
+                      <div class="details per">
+                          <h2>Ecem<br><span class="job-title">... </span>
+                              <ul class="social-icons-per">
+                                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                  <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                                </ul>
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- Portfolyo -->
+    <div class="section section4" id="portfolio">
+        <h3 class="portfolio-header">Hizmetler</h3>
+
+    </div>
+    
+    
+    <footer class="section-half" id="contact">
+        <div class="contact">
+            <img src="img/work.jpg" class="image" alt="">
+        <form action="" method="get">
+            <div class="contact-form">
+                <h4 class="text-center heading-3">Bize Ulaşın</h4>
+                    <div class="form-group">
+                        <label for="name">İsim</label>
+                        <input type="text" name="name" id="name" placeholder="İsim: " class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email: " class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Mesajınız: "></textarea>
+                    </div>
+                <button type="submit" id="form-btn" class="btn-1 btn-primary">Gönder</button>
+                <ul class="footer-socials">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/bigrafi_/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+             
+        </form>
+    </div>
+        
+    </footer>
+    
+    <div class="copyright">İstanbul / Türkiye © 2022 by Bigrafi </div>
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "90%";
+        }
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>
