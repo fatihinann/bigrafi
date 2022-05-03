@@ -100,24 +100,22 @@
     height: 370px;
 }
 .container-f{
-    gap: 1rem;
-}
-.image{
-    width: 300px;
+    row-gap: 1rem;
+    column-gap: .2rem;
+    padding: 0 .2rem;
 }
 .card-wrapper {
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 250px;
     position: relative;
-    
   }
   
 .card .card-image img {
-    transform: translateY(-1em);
-    -webkit-transform: translateY(-1em);
-    -moz-transform: translateY(-1em);
-    -ms-transform: translateY(-1em);
-    -o-transform: translateY(-1em);
+    transform: translateY(-2em);
+    -webkit-transform: translateY(-2em);
+    -moz-transform: translateY(-2em);
+    -ms-transform: translateY(-2em);
+    -o-transform: translateY(-2em);
 }
   .card:hover .card-image {
     transform: translateY(0px);
@@ -129,8 +127,8 @@
 }
   .card {
     position: absolute;
-    max-width: 200px;
-    height: 300px;
+    max-width: 180px;
+    height: 250px;
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
@@ -185,6 +183,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 1rem;
   }
   .details h2 .job-title {
     font-size: 1rem;
@@ -204,7 +203,10 @@
   .section4 .shape{
       background-color: #f7bbbb;
   }
-  
+
   .services-grid{
     padding: 0;
+  }
+  .copyright{
+      padding: 1rem 1rem 1rem ;
   }

@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif
 }
 body{
     background: #EA5556;
@@ -15,6 +15,7 @@ header{
 }
 p{
     line-height: 1.5;
+    color: #222;
 }
 .text-center{text-align: center;}
 .heading-1{font-size: 1.25rem;}
@@ -257,7 +258,8 @@ hr{
     max-width: 1700px;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;flex-wrap: wrap
+    margin: 0 auto;
+    flex-wrap: wrap
   }
   
   .card-wrapper {
@@ -451,11 +453,16 @@ hr{
     font-weight: 300;
 }
 .section4{
-    background-color: #f7bbbb;
+    background: #f7bbbb;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    margin: 0 auto;
+    text-align: center;
+}
+.fourth{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .service-header{
     font-weight: 900;
@@ -498,7 +505,7 @@ hr{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    padding: 5rem;
+    padding: 1rem;
   }
   .service {
     background: #fff;
@@ -516,7 +523,22 @@ hr{
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  
+  .service .i-2rem{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.service h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 1rem 0 0.6rem 0;
+}
+.service p{
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #999;
+}
   .service:hover {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
@@ -524,7 +546,7 @@ hr{
   }
   
   .service i {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .service1 i,
@@ -557,16 +579,22 @@ hr{
     border: 2px solid #9c42ca;
   }
   
-  .service .cta span {
-    font-size: 0.6rem;
-  }
   
-  .service > * {
+.service > * {
     flex: 1 1 100%;
   }
   
   .service .cta {
     align-self: flex-end;
+    margin-bottom: 0;
+  }
+  .service .cta{
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
   }
   
   @media all and (max-width:900px) {
@@ -689,6 +717,6 @@ footer form{
         font-size: 2rem;
     }
     .image{
-        width: 500px;
+        width: 100%;
     }
 }
