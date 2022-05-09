@@ -31,11 +31,11 @@
                     <li><a href="https://www.instagram.com/bigrafi_/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
                 </ul>
                 <ul class="links">
-                    <li><a href="index.html">Anasayfa</a><ul class="shape"></ul></li>
-                    <li><a href="#about">Hakkımızda</a><ul class="shape"></ul></li>
-                    <li><a href="#service">Hizmetler</a><ul class="shape"></ul></li>   
-                    <li><a href="#portfolio">Portfolyo</a><ul class="shape"></ul></li>
-                    <li><a href="#contact">İletişim</a><ul class="shape"></ul></li>
+                    <li><a href="index.html" onclick="clickLink()">Anasayfa</a><ul class="shape"></ul></li>
+                    <li><a href="#about" onclick="clickLink()">Hakkımızda</a><ul class="shape"></ul></li>
+                    <li><a href="#service" onclick="clickLink()">Hizmetler</a><ul class="shape"></ul></li>   
+                    <li><a href="#portfolio" onclick="clickLink()">Portfolyo</a><ul class="shape"></ul></li>
+                    <li><a href="#contact" onclick="clickLink()">İletişim</a><ul class="shape"></ul></li>
                 </ul>
               </div>
             
@@ -299,11 +299,15 @@
     <div class="copyright">İstanbul / Türkiye © 2022 by Bigrafi </div>
     <script>
         function openNav() {
-        document.getElementById("myNav").style.width = "90%";
-        }
-        function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-        }
+            document.getElementById("myNav").style.width = "90%";
+            const a = document.querySelectorAll("a");
+            const overlay = document.querySelector(".overlay");
+            a.forEach((el) => {
+                el.addEventListener("click", function(e){
+                document.getElementById("myNav").style.width = "0%"; // Changed that
+                });  
+            });
+            }
     </script>
 </body>
 </html>

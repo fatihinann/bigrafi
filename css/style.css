@@ -1,28 +1,35 @@
+/* Global Selectors */
 *{
     padding: 0;
     margin: 0;
     font-family: Montserrat, sans-serif
 }
+
 body{
     background: #EA5556;
 }
+
 header{
     position: relative;
     height: 150px;
 }
-.btn{
-    text-decoration: none;
-}
+
 p{
     line-height: 1.5;
     color: #222;
 }
+
 .text-center{text-align: center;}
+
 .heading-1{font-size: 1.25rem;}
 .heading-2{font-size: 1.5rem;}
 .heading-3{font-size: 1.75rem;}
 .heading-3{font-size: 1.75rem;}
 .heading-4{font-size: 2rem;}
+
+.btn{
+    text-decoration: none;
+}
 .btn-1{
     padding: 0.5rem 5rem;
     line-height: 2rem;
@@ -34,18 +41,22 @@ p{
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
 }
+
+/* Global Selectors */
+
+
 .profile-image{
     position: absolute;
     height: 150px;
     z-index: 1;
     left: 5rem;
 }
+
 #navbar{
     z-index: 5;
     right: 5rem;
     bottom: 0;
     position: absolute;
-    
 }
 #navbar ul{
     list-style: none;
@@ -54,10 +65,15 @@ p{
     gap: 1rem;
     font-size: 1.2rem;
 }
+#navbar li{
+  line-height: 1.5rem;
+  padding: 6px .5em;
+}
 #navbar a{
     text-decoration: none;
     color: #fff;
 }
+
 .socials{
     display: flex;
     justify-content: right;
@@ -66,6 +82,7 @@ p{
 .socials a{
     font-size: 1.5rem;
 }
+
 .links{
     text-align: center;
 }
@@ -215,7 +232,7 @@ hr{
 .section-center{
     margin: auto;
     text-align: center;
-    max-width: 250px;
+    max-width: 280px;
 }
 .services{
     color: #EA5556;
@@ -257,7 +274,7 @@ hr{
   }
   
   .card-wrapper {
-    height: 500px;
+    height: 380px;
     width: 250px;
     position: relative;
     
@@ -696,17 +713,20 @@ footer form{
     padding-right: 5rem;
     padding-bottom: 2rem; 
 }
-@media only screen and (max-width: 1000px){
-    #navbar .links li a{font-size: 1rem;}
-}
+@media only screen and (max-width: 1000px){#navbar .links li a{font-size: 1rem;}}
+@media only screen and (max-width: 900px){#navbar{display: none;}
+.toggle-btn{
+    position: absolute;
+    display: block;
+    right: 5rem;
+    top: 2rem;
+    font-size: 2rem;
+}}
 @media only screen and (max-width: 800px){
-  #navbar .links{
-    display: none;
-  }
   .toggle-btn{
       position: absolute;
       display: block;
-      right: 5rem;
+      right: 2rem;
       top: 2rem;
       font-size: 2rem;
   }
@@ -725,10 +745,10 @@ footer form{
       right: 35px;
     }
   .sidebar .toggle-btn{
-      font-size: 2.5rem;
+      font-size: 2rem;
       position: fixed;
-      right: 1rem;
-      top: 1rem;
+      right: 2rem;
+      top: 2rem;
   }
   .overlay-content .socials{
       display: flex;
