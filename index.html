@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigrafi</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="(max-width:550px)" href="css/mobile.css">
+    <link rel="shortcut icon" href="img/bigrafi.ico" />
+    
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
         <div class="sidebar">
             <span class="toggle-btn fas fa-bars" onclick="openNav()"></span>
             <span class="navbar-left">
-                <img class="profile-image" src="img/bigrafi.jpg" alt="bigrafi web tasarım">
+                <img class="profile-image" src="img/bigrafi.jpg" alt="bigrafi">
             </span>
         </div>
         
@@ -37,10 +39,8 @@
                     <li><a href="#portfolio" onclick="clickLink()">Portfolyo</a><ul class="shape"></ul></li>
                     <li><a href="#contact" onclick="clickLink()">İletişim</a><ul class="shape"></ul></li>
                 </ul>
-              </div>
-            
-            </div>
-
+              </div>    
+        </div>
         
         <nav id="navbar">
             <span class="navbar-left">
@@ -87,12 +87,14 @@
             <span class="shape"></span>
             <!-- <span class="shape-section"></span> -->
         </section>
-        
         <section class="my-sec nd">
-            <p>20li yaşlarda 5 arkadaşın girişimi olan, kaliteli tasarımların yapıldığı Grafik, web sitesi tasarımlarını yapan bi grubun eseridir. Öz Tasarımlarınızı yaptırabileceğiniz sade ve kaliteli tasarımlar bulabileceğiniz bir isimdir.</p>
-            
+            <div>
+                <span class="start"></span>
+                <p>20li yaşlarda 5 arkadaşın girişimi olan, kaliteli tasarımların yapıldığı <strong>Grafik tasarımı, web sitesi tasarımları</strong> yapan bi grubun eseridir. Öz Tasarımlarınızı yaptırabileceğiniz sade ve kaliteli tasarımlar bulabileceğiniz bir isimdir.</p>
+                <span class="end"></span>
+            </div>
         </section>
-    </div>
+        </div>
     <!-- Profiles -->
     <div class="section section3">
         <div class="container-f">
@@ -100,7 +102,7 @@
                 <div class="card profile">
                   <div class="card-image profile-img">
                       <div class="stat"><h2 class="name">Yasiner Albayrak<br><span class="job">CEO</span></h2></div>
-                    <img src="img/user.svg" alt="profile two">
+                    <img src="img/user.svg" alt="user">
                   </div>
             
                   <ul class="social-icons">
@@ -126,7 +128,7 @@
               <div class="card profile">
                 <div class="card-image profile-img">
                     <div class="stat"><h2 class="name">Fatih İnan<br><span class="job">Web Devoloper</span></h2></div>
-                  <img src="img/user.svg" alt="profile two">
+                  <img src="img/user.svg" alt="user">
                 </div>
           
                 <ul class="social-icons">
@@ -152,7 +154,7 @@
                 <div class="card profile">
                     <div class="card-image profile-img">
                         <div class="stat"><h2 class="name">Mehmet Yaman<br><span class="job">Designer</span></h2></div>
-                        <img src="img/user.svg" alt="profile two">
+                        <img src="img/user.svg" alt="user">
                     </div>
             
                     <ul class="social-icons">
@@ -179,7 +181,7 @@
                 <div class="card profile">
                   <div class="card-image profile-img">
                       <div class="stat"><h2 class="name">Emre Kutucu<br><span class="job">Designer</span></h2></div>
-                    <img src="img/user.svg" alt="profile two">
+                    <img src="img/user.svg" alt="user">
                   </div>
             
                   <ul class="social-icons">
@@ -205,7 +207,7 @@
                 <div class="card profile">
                   <div class="card-image profile-img">
                       <div class="stat"><h2 class="name">Ecem Okman<br><span class="job">Graphic Designer</span></h2></div>
-                    <img src="img/user.svg" alt="profile two">
+                    <img src="img/user.svg" alt="user">
                   </div>
             
                   <ul class="social-icons">
@@ -264,10 +266,10 @@
         </section>
     </div>
     
-    
+    <!--İletişim-->
     <footer class="section-half" id="contact">
         <div class="contact">
-            <img src="img/work.jpg" class="image" alt="">
+            <img src="img/work.jpg" class="image" alt="working">
         <form action="" method="get">
             <div class="contact-form">
                 <h4 class="text-center heading-4 ">Bize Ulaşın</h4>
@@ -304,7 +306,7 @@
             const overlay = document.querySelector(".overlay");
             a.forEach((el) => {
                 el.addEventListener("click", function(e){
-                document.getElementById("myNav").style.width = "0%"; // Changed that
+                document.getElementById("myNav").style.width = "0%";
                 });  
             });
             }
