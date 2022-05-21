@@ -14,6 +14,9 @@
     
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <header>
             
         <div class="sidebar">
@@ -33,11 +36,11 @@
                     <li><a href="https://www.instagram.com/bigrafi_/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
                 </ul>
                 <ul class="links">
-                    <li><a href="index.html" onclick="clickLink()">Anasayfa</a><ul class="shape"></ul></li>
-                    <li><a href="#about" onclick="clickLink()">Hakkımızda</a><ul class="shape"></ul></li>
-                    <li><a href="#service" onclick="clickLink()">Hizmetler</a><ul class="shape"></ul></li>   
-                    <li><a href="portfolio.html" onclick="clickLink()">Portfolyo</a><ul class="shape"></ul></li>
-                    <li><a href="#contact" onclick="clickLink()">İletişim</a><ul class="shape"></ul></li>
+                    <li><a href="index.html" >Anasayfa</a><ul class="shape"></ul></li>
+                    <li><a href="#about" >Hakkımızda</a><ul class="shape"></ul></li>
+                    <li><a href="#portfolio" >Portfolyo</a><ul class="shape"></ul></li>
+                    <li><a href="#service" >Hizmetler</a><ul class="shape"></ul></li>   
+                    <li><a href="#contact" >İletişim</a><ul class="shape"></ul></li>
                 </ul>
               </div>    
         </div>
@@ -53,16 +56,18 @@
                 </ul>
                 <ul class="links">
                     <li><a href="index.html">Anasayfa</a><ul class="shape"></ul></li>
+                    <li><a href="#service">Hizmetler</a><ul class="shape"></ul></li>   
                     <li><a href="#about">Hakkımızda</a><ul class="shape"></ul></li>
-                    <li><a href="#blog.html">Blog</a><ul class="shape"></ul></li>   
-                    <li><a href="portfolio.html">Portfolyo</a><ul class="shape"></ul></li>
+                    <li><a href="#portfolio">Portfolyo</a><ul class="shape"></ul></li>
                     <li><a href="#contact">İletişim</a><ul class="shape"></ul></li>
                 </ul>
             </div>
         </nav>
     </header>
     <hr>
-    <!-- Hoş Geldiniz -->
+    
+    <main>
+        <!-- Hoş Geldiniz -->
     <div class="section section1">
         <section class="my-sec">
             <h2>Bigrafi'ye Hoş Geldin!</h2>
@@ -71,12 +76,12 @@
         <section class="my-sec st">
             <div class="section-center">
                 <p class="service-text">Hizmetlerimizden yararlanmak için hizmetlerimize göz atabilirsiniz. </p>
-                <a href="services.html" class="services">Hizmetler</a>
+                <a href="#service" class="services">Hizmetler</a>
             </div>
             <div class="middle-line"></div>
             <div class="section-center">
                 <p class="service-text">Yaptığımız tasarımları incelemek için portfolyomuza göz atabilirsiniz. </p>
-                <a href="portfolio.html" class="services">Portfolyo</a>
+                <a href="#portfolio" class="services">Portfolyo</a>
             </div>
         </section>
     </div>
@@ -127,7 +132,7 @@
             <div class="card-wrapper">
               <div class="card profile">
                 <div class="card-image profile-img">
-                    <div class="stat"><h2 class="name">Fatih İnan<br><span class="job">Web Devoloper</span></h2></div>
+                    <div class="stat"><h2 class="name">Fatih İnan<br><span class="job">Front-End Dev. UI / UX</span></h2></div>
                   <img src="img/user.svg" alt="user">
                 </div>
           
@@ -153,7 +158,7 @@
             <div class="card-wrapper">
                 <div class="card profile">
                     <div class="card-image profile-img">
-                        <div class="stat"><h2 class="name">Mehmet Yaman<br><span class="job">Designer</span></h2></div>
+                        <div class="stat"><h2 class="name">Mehmet Yaman<br><span class="job">Back-End Dev. & UX</span></h2></div>
                         <img src="img/user.svg" alt="user">
                     </div>
             
@@ -165,7 +170,7 @@
                     </ul>
             
                     <div class="details per">
-                        <h2>Mehmet Yaman<br><span class="job-title">Designer</span>
+                        <h2>Mehmet Yaman<br><span class="job-title">Back-End Dev. & UX</span>
                           <ul class="social-icons-per">
                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
                             <li><a href=""><i class="fab fa-github"></i></a></li>
@@ -232,12 +237,83 @@
         </div>
     </div>
     <!-- Portfolyo -->
-    <div class="section section4" id="service">
+    <div class="continer section4 " id="portfolio">
+        <section class="portfolio-wrapper">
+        <section class="portfolio-header my-sec m-1">
+            <h2><i class="fa-solid fa-images"></i><br>PORTFOLYO</h2>
+        </section>
+        
+        <div class="portfolio-headers m-1 container">
+
+            <div class="my-sec m-1" onclick="myFunction1()">
+                <h2>web tasarım</h2>
+                <span class="shape-section"></span>
+                <!-- <span class="shape-section"></span> -->
+            </div>
+        
+            <div class="p-double">
+                <div class="p-content c2" id="myDiv1">    
+                    <a href="img/img-1.jpg" class="img-1">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-2.jpg" class="img-2">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="my-sec m-1" onclick="myFunction2()">
+                <h2>logo</h2>
+                <span class="shape-section"></span>
+            </div>
+            <div class="p-4">
+                <div class="p-content c2"id="myDiv2">    
+                    <a href="img/img-3.jpg" class="img-3">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-4.jpg" class="img-4">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-5.jpg" class="img-5">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-6.jpg" class="img-6">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="my-sec m-1" onclick="myFunction3()">
+                <h2>Kurumsal Kimlik</h2>
+                <span class="shape-section"></span>
+                <!-- <span class="shape-section"></span> -->
+            </div>
+            <div class="p-4">
+                <div class="p-content c3"id="myDiv3">    
+                    <a href="img/img-7.jpg" class="img-7">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-8.jpg" class="img-8">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-7.jpg" class="img-7">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                    <a href="img/img-8.jpg" class="img-8">
+                        <i class="fa-solid fa-expand"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        </section>
+    </div>
+    <!--Hizmtler-->
+    <div class="section section5" id="service">
         <section class="my-sec">
             <h2 class="service-header">Hizmetler</h2>
             <span class="shape"></span>
         </section>
-        <section class="sec4 cta"><p>Her zaman en iyi hizmeti hızlı ve güvenilir olarak, en iyi şekilde teslim etmek amacımız olmuştur.</p></section>
+        <section class="sec4 cta"><p>Her zaman en iyi hizmeti hızlı ve güvenilir olarak, en iyi şekilde hizmet vermek amacımız olmuştur.</p></section>
         <section class="fourth">
             
             <div class="services-grid">
@@ -262,15 +338,16 @@
                 <a href=""  class="cta">Daha Fazlası için Bize Ulaşın <i class="fa-solid fa-angle-down icn"></i></a>
                 </div>
             </div>
-
+            
         </section>
     </div>
+    </main>
     
     <!--İletişim-->
     <footer class="section-half" id="contact">
         <div class="contact">
             <img src="img/work.jpg" class="image" alt="working">
-        <form action="" method="post">
+        <form action="addmessage.php" method="post">
             <div class="contact-form">
                 <h4 class="text-center heading-4 ">Bize Ulaşın</h4>
                     <div class="form-group">
@@ -279,7 +356,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email: " class="form-control">
+                        <input type="email" name="email" id="email" placeholder="Email: " class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="message">Mesaj</label>
@@ -302,6 +379,7 @@
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "90%";
+
             const a = document.querySelectorAll("a");
             const overlay = document.querySelector(".overlay");
             a.forEach((el) => {
@@ -309,7 +387,42 @@
                 document.getElementById("myNav").style.width = "0%";
                 });  
             });
+            
             }
     </script>
+    
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("myDiv1");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("myDiv2");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction3() {
+            var x = document.getElementById("myDiv3");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })  
+    </script>
+
 </body>
 </html>
