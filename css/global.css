@@ -1,0 +1,81 @@
+.form-group{
+    padding: 0.25 0;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+.btn-primary-soft{
+    background: #3486b6;
+}
+.btn-primary-soft:hover{
+    color: #fff;
+    background-color: #bdfffd;
+    border: 1px solid #c3dfef;
+    box-sizing: border-box;
+}
+.btn-primary-dark{
+    background: #225979;
+}
+.btn-primary-dark:hover{
+    color: #225979;
+    background-color: #fff;
+    border: 1px solid #225979;
+    box-sizing: border-box;
+}
+.btn-primary-dark1{
+    background: #1d4a65;
+}
+.btn-primary-dark1:hover{
+    color: #1d4a65;
+    background-color: #fff;
+    border: 1px solid #1d4a65;
+    box-sizing: border-box;
+}
+.btn-primary-dark2{
+    background: #112c3c;
+}
+.btn-primary-dark2:hover{
+    color: #112c3c;
+    background-color: #fff;
+    border: 1px solid #1d4a65;
+    box-sizing: border-box;
+}
+.btn-primary-dark3{
+    background: #0b1d28;
+}
+.btn-primary-dark3:hover{
+    color: #0b1d28;
+    background-color: #fff;
+    border: 1px solid #0b1d28;
+    box-sizing: border-box;
+}
+.bg-dark{
+    background-color: #202020;
+}
+.bg-w{
+    background-color: white;
+}
+.color-my{
+    color: #EB5655;
+}
+.padding{
+    padding-top: 1rem;
+}
+.margin{
+    margin-top: 1rem;
+}
+.color-w{
+    color: #fff;
+}

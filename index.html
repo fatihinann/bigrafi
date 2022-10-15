@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bigrafi</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            media="(max-width:550px)"
+            href="css/mobile.css"
+        />
+        <link rel="shortcut icon" href="img/bigrafi.ico" />
+    </head>
+    <body>
+        <header>
+            <div class="sidebar">
+                <span class="toggle-btn fas fa-bars" onclick="openNav()"></span>
+                <span class="navbar-left">
+                    <img
+                        class="profile-image"
+                        src="img/bigrafi.jpg"
+                        alt="bigrafi"
+                    />
+                </span>
+            </div>
+
+            <div id="myNav" class="overlay">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <div class="overlay-content">
+                    <ul class="socials">
+                        <li>
+                            <a href="#" class="facebook"
+                                ><i class="fab fa-facebook"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/bigrafi_/"
+                                target="_blank"
+                                class="instagram"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">Anasayfa</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#about">Hakkımızda</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolyo</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#service">Hizmetler</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#contact">İletişim</a>
+                            <ul class="shape"></ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav id="navbar">
+                <span class="navbar-left"> </span>
+                <div class="navbar-inside">
+                    <ul class="socials">
+                        <li>
+                            <a href="#" class="facebook"
+                                ><i class="fab fa-facebook"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/bigrafi_/"
+                                target="_blank"
+                                class="instagram"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">Anasayfa</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#service">Hizmetler</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#about">Hakkımızda</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolyo</a>
+                            <ul class="shape"></ul>
+                        </li>
+                        <li>
+                            <a href="#contact">İletişim</a>
+                            <ul class="shape"></ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <hr />
+
+        <main>
+            <!-- Hoş Geldiniz -->
+            <div class="section section1">
+                <section class="my-sec">
+                    <h2>Bigrafi'ye Hoş Geldin!</h2>
+                    <span class="shape"></span>
+                </section>
+                <section class="my-sec st">
+                    <div class="section-center">
+                        <p class="service-text">
+                            Hizmetlerimizden yararlanmak için hizmetlerimize göz
+                            atabilirsiniz.
+                        </p>
+                        <a href="#service" class="services">Hizmetler</a>
+                    </div>
+                    <div class="middle-line"></div>
+                    <div class="section-center">
+                        <p class="service-text">
+                            Yaptığımız tasarımları incelemek için portfolyomuza
+                            göz atabilirsiniz.
+                        </p>
+                        <a href="#portfolio" class="services">Portfolyo</a>
+                    </div>
+                </section>
+            </div>
+            <!-- Bigrafi Kimdir? -->
+            <div class="section section2" id="about">
+                <section class="my-sec">
+                    <h2>Bigrafi Kimdir?</h2>
+                    <span class="shape"></span>
+                    <!-- <span class="shape-section"></span> -->
+                </section>
+                <section class="my-sec nd">
+                    <div>
+                        <span class="start"></span>
+                        <p>
+                            20li yaşlarda 5 arkadaşın girişimi olan, kaliteli
+                            tasarımların yapıldığı
+                            <strong
+                                >Grafik tasarımı, web sitesi tasarımları</strong
+                            >
+                            yapan bi grubun eseridir. Öz Tasarımlarınızı
+                            yaptırabileceğiniz sade ve kaliteli tasarımlar
+                            bulabileceğiniz bir isimdir.
+                        </p>
+                        <span class="end"></span>
+                    </div>
+                </section>
+            </div>
+            <!-- Profiles -->
+            <div class="section section3">
+                <div class="container-f">
+                    <div class="card-wrapper">
+                        <div class="card profile">
+                            <div class="card-image profile-img">
+                                <div class="stat">
+                                    <h2 class="name">
+                                        Yasiner Albayrak<br /><span class="job"
+                                            >CEO</span
+                                        >
+                                    </h2>
+                                </div>
+                                <img src="img/user.svg" alt="user" />
+                            </div>
+
+                            <ul class="social-icons">
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fa-regular fa-envelope"></i
+                                    ></a>
+                                </li>
+                            </ul>
+
+                            <div class="details per">
+                                <h2>
+                                    Yasiner Albayrak<br /><span
+                                        class="job-title"
+                                        >CEO</span
+                                    >
+                                    <ul class="social-icons-per">
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-instagram"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fab fa-linkedin-in"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fa-regular fa-envelope"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card profile">
+                            <div class="card-image profile-img">
+                                <div class="stat">
+                                    <h2 class="name">
+                                        Fatih İnan<br /><span class="job"
+                                            >Front-End Dev. UI / UX</span
+                                        >
+                                    </h2>
+                                </div>
+                                <img src="img/user.svg" alt="user" />
+                            </div>
+
+                            <ul class="social-icons">
+                                <li>
+                                    <a
+                                        href="https://www.instagram.com/fatihiinann/"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/fatihinann/bigrafi"
+                                        ><i class="fab fa-github"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/fatih-inan-324983233/"
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fa-regular fa-envelope"></i
+                                    ></a>
+                                </li>
+                            </ul>
+
+                            <div class="details per">
+                                <h2>
+                                    Fatih İnan<br /><span class="job-title"
+                                        >Web Devoloper</span
+                                    >
+                                    <ul class="social-icons-per">
+                                        <li>
+                                            <a
+                                                href="https://www.instagram.com/fatihiinann/"
+                                                target="_blank"
+                                                ><i class="fab fa-instagram"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://github.com/fatihinann/bigrafi"
+                                                target="_blank"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.linkedin.com/in/fatih-inan-324983233/"
+                                                target="_blank"
+                                                ><i
+                                                    class="fab fa-linkedin-in"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fa-regular fa-envelope"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card profile">
+                            <div class="card-image profile-img">
+                                <div class="stat">
+                                    <h2 class="name">
+                                        Mehmet Yaman<br /><span class="job"
+                                            >Back-End Dev. & UX</span
+                                        >
+                                    </h2>
+                                </div>
+                                <img src="img/user.svg" alt="user" />
+                            </div>
+
+                            <ul class="social-icons">
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fa-regular fa-envelope"></i
+                                    ></a>
+                                </li>
+                            </ul>
+
+                            <div class="details per">
+                                <h2>
+                                    Mehmet Yaman<br /><span class="job-title"
+                                        >Back-End Dev. & UX</span
+                                    >
+                                    <ul class="social-icons-per">
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-instagram"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fab fa-linkedin-in"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fa-regular fa-envelope"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card profile">
+                            <div class="card-image profile-img">
+                                <div class="stat">
+                                    <h2 class="name">
+                                        Emre Kutucu<br /><span class="job"
+                                            >Designer</span
+                                        >
+                                    </h2>
+                                </div>
+                                <img src="img/user.svg" alt="user" />
+                            </div>
+
+                            <ul class="social-icons">
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fa-regular fa-envelope"></i
+                                    ></a>
+                                </li>
+                            </ul>
+
+                            <div class="details per">
+                                <h2>
+                                    Emre Kutucu<br /><span class="job-title"
+                                        >Designer</span
+                                    >
+                                    <ul class="social-icons-per">
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-instagram"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fab fa-linkedin-in"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fa-regular fa-envelope"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card profile">
+                            <div class="card-image profile-img">
+                                <div class="stat">
+                                    <h2 class="name">
+                                        Ecem Okman<br /><span class="job"
+                                            >Graphic Designer</span
+                                        >
+                                    </h2>
+                                </div>
+                                <img src="img/user.svg" alt="user" />
+                            </div>
+
+                            <ul class="social-icons">
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fa-regular fa-envelope"></i
+                                    ></a>
+                                </li>
+                            </ul>
+
+                            <div class="details per">
+                                <h2>
+                                    Ecem Okman<br /><span class="job-title"
+                                        >Graphic Designer</span
+                                    >
+                                    <ul class="social-icons-per">
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-instagram"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fab fa-linkedin-in"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                ><i
+                                                    class="fa-regular fa-envelope"
+                                                ></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolyo -->
+            <div class="continer section4" id="portfolio">
+                <section class="portfolio-wrapper">
+                    <section class="portfolio-header my-sec m-1">
+                        <h2>
+                            <i class="fa-solid fa-images"></i><br />PORTFOLYO
+                        </h2>
+                    </section>
+
+                    <div class="portfolio-headers m-1 container">
+                        <div class="my-sec m-1" onclick="myFunction1()">
+                            <h2>web tasarım</h2>
+                            <span class="shape-section"></span>
+                            <!-- <span class="shape-section"></span> -->
+                        </div>
+
+                        <div class="p-double">
+                            <div class="p-content c2" id="myDiv1">
+                                <a href="img/img-1.jpg" class="img-1">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-2.jpg" class="img-2">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="my-sec m-1" onclick="myFunction2()">
+                            <h2>logo</h2>
+                            <span class="shape-section"></span>
+                        </div>
+                        <div class="p-4">
+                            <div class="p-content c2" id="myDiv2">
+                                <a href="img/img-3.jpg" class="img-3">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-4.jpg" class="img-4">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-5.jpg" class="img-5">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-6.jpg" class="img-6">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="my-sec m-1" onclick="myFunction3()">
+                            <h2>Kurumsal Kimlik</h2>
+                            <span class="shape-section"></span>
+                            <!-- <span class="shape-section"></span> -->
+                        </div>
+                        <div class="p-4">
+                            <div class="p-content c3" id="myDiv3">
+                                <a href="img/img-7.jpg" class="img-7">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-8.jpg" class="img-8">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-7.jpg" class="img-7">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                                <a href="img/img-8.jpg" class="img-8">
+                                    <i class="fa-solid fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Hizmtler-->
+            <div class="section section5" id="service">
+                <section class="my-sec">
+                    <h2 class="service-header">Hizmetler</h2>
+                    <span class="shape"></span>
+                </section>
+                <section class="sec4 cta">
+                    <p>
+                        Her zaman en iyi hizmeti hızlı ve güvenilir olarak, en
+                        iyi şekilde hizmet vermek amacımız olmuştur.
+                    </p>
+                </section>
+                <section class="fourth">
+                    <div class="services-grid">
+                        <div class="service service1">
+                            <i class="i-2rem fa-solid fa-chart-area"></i>
+                            <h4>Grafik Tasarım</h4>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat.
+                            </p>
+                            <a href="" class="cta"
+                                >Daha Fazlası için Bize Ulaşın
+                                <i class="fa-solid fa-angle-down icn"></i
+                            ></a>
+                        </div>
+
+                        <div class="service service2">
+                            <i class="i-2rem fa-solid fa-code"></i>
+                            <h4>Web Tasarım</h4>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat.
+                            </p>
+                            <a href="" class="cta"
+                                >Daha Fazlası için Bize Ulaşın
+                                <i class="fa-solid fa-angle-down icn"></i
+                            ></a>
+                        </div>
+
+                        <div class="service service3">
+                            <i class="i-2rem fa-regular fa-address-card"></i>
+                            <h4>Kurumsal Kimlik</h4>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat.
+                            </p>
+                            <a href="" class="cta"
+                                >Daha Fazlası için Bize Ulaşın
+                                <i class="fa-solid fa-angle-down icn"></i
+                            ></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!--İletişim-->
+        <footer class="section-half" id="contact">
+            <div class="contact">
+                <img src="img/work.jpg" class="image" alt="working" />
+                <form action="addmessage.php" method="post">
+                    <div class="contact-form">
+                        <h4 class="text-center heading-4">Bize Ulaşın</h4>
+                        <div class="form-group">
+                            <label for="name">İsim</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="İsim: "
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Email: "
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="5"
+                                class="form-control"
+                                placeholder="Mesajınız: "
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            id="form-btn"
+                            class="btn-1 btn-primary"
+                        >
+                            Gönder
+                        </button>
+                        <ul class="footer-socials">
+                            <li>
+                                <a href="#" class="facebook"
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/bigrafi_/"
+                                    class="instagram"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </footer>
+
+        <div class="copyright">İstanbul / Türkiye © 2022 by Bigrafi</div>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "90%";
+
+                const a = document.querySelectorAll("a");
+                const overlay = document.querySelector(".overlay");
+                a.forEach((el) => {
+                    el.addEventListener("click", function (e) {
+                        document.getElementById("myNav").style.width = "0%";
+                    });
+                });
+            }
+        </script>
+
+        <script>
+            function myFunction1() {
+                var x = document.getElementById("myDiv1");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function myFunction2() {
+                var x = document.getElementById("myDiv2");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function myFunction3() {
+                var x = document.getElementById("myDiv3");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
